@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background-color: black;
+}
 body {
     background-color: black;
     line-height: 24px;
@@ -7,6 +10,6 @@ body {
     font-weight: normal;
     color: #888888; }
   
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Heebo", sans-serif;
     font-weight: bold; }

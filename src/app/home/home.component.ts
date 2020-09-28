@@ -7,10 +7,17 @@ import { Router } from "@angular/router";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  isCollapsed: boolean;
+  toggleNavbar = true;
+  obLogo: string = "../assets/img/logo.png";
+  constructor() { 
+    this.isCollapsed = true;
+  }
 
   ngOnInit(): void {
   }
 
+  logout() {
+
+  }
 }
