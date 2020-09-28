@@ -1,0 +1,32 @@
+html {
+    background-color: black;
+}
+body {
+    background-color: black;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: white;
+  }
+.container {
+    color: black;
+    position: relative;
+    font-family: Arial;
+}
+  
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    max-height: 400px;
+    height: 400px;
+  }

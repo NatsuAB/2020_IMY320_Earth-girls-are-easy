@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #888888;
+  color: white;
 }
 
 h1,
@@ -17,9 +17,6 @@ h6 {
   font-weight: bold;
 }
 
-#homeImages {
-  position: relative;
-}
 
 /*#firstImage {
     position: fixed;
@@ -31,6 +28,7 @@ h6 {
   margin-top: 50px;
 }
 
+/*------------------------------navbar------------------------------*/
 .header_area {
   position: absolute;
   width: 100%;
@@ -262,3 +260,54 @@ h6 {
   padding: 0 20px;
   top: 80px;
 }
+/*-----------------------------------------NavBar-------------------------------------------*/
+
+/*-----------------------------------------Overlay----------------------------------------*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .rocketWords {
+    position: absolute;
+    top: 130px;
+    left: 880px;
+    font-family: algerian;
+    color: yellow;
+    font-size: 80px;
+    animation: rocket 5s 2;
+    animation-direction: alternate;
+  }
+  @keyframes rocket {
+    0%   {left: 880px; top: 130px;}
+    25%  {left: 880px; top: 110px;}
+    75%  {left: 880px; top: 150px;}
+    100% {left: 880px; top: 130px;}
+  }
+  
+  .projectWords {
+    position: absolute;
+    bottom: 50px;
+    left: 720px;
+    font-family: algerian;
+    color: yellow;
+    font-size: 80px;
+    animation: project 5s 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes project {
+    0%   {left: 720px; bottom: 50px;}
+    25%  {left: 680px; bottom: 50px;}
+    75%  {left: 800px; bottom: 50px;}
+    100% {left: 720px; bottom: 50px;}
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/*-----------------------------------------Overlay----------------------------------------*/

@@ -5,10 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ProfileComponent } from './profile/profile.component';
+import { NavComponent } from './nav/nav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent,
+    NavComponent
   ],
   imports: [
     NgbModule,

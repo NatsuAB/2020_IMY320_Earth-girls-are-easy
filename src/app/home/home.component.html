@@ -15,48 +15,15 @@
             </ul>
         </div>
     </nav>-->
-    <header class="header_area">
-        <div class="main_menu">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <!--<a class="navbar-brand logo_h" routerLink="/home"><img [src]="obLogo" alt="" /></a>-->
-              <button class="navbar-toggler" type="button" (click)="toggleNavbar = !toggleNavbar" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse offset" id="navbarSupportedContent" [ngbCollapse]="toggleNavbar">
-                <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" routerLink="/home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="/about">About</a>
-                  </li>
-                  <!--href="about-us.html"-->
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="/dashboard">Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="/profile">Profile</a>
-                  </li>
-                  <!--href="service.html"-->
-                  <!--href="about-us.html"-->
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+    <app-nav></app-nav>
     <section>
-        <div id="homeImages" class="col-md-6">
+        <div class="container" class="col-md-6">
             <!--<img id="firstImage" src="../../assets/img/1st_bar.png">
             <img id="secImage" src="../../assets/img/2nd_bar.png">-->
-            <img id="secImage" src="../../assets/img/h.png">
+            <img id="secImage" src="../../assets/img/em_bars.png">
+            <div class="rocketWords">R<br><br><br>O<br><br><br>C<br><br><br>K<br><br><br>E<br><br><br>T</div>
+            <div class="projectWords">PROJECTS</div>
+
         </div>
     </section>
 </body>
