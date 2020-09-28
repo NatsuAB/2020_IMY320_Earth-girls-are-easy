@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #888888; }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold; }
+
+#homeImages {
+    position: relative;
+}
+/*#firstImage {
+    position: fixed;
+}*/
+
+#secImage {
+    position: relative;
+    left: 200px;
+}
