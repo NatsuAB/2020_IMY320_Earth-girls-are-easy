@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
+html {
+    background-color: black;
+}
+body {
+    background-color: black;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #888888; }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold; }

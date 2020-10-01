@@ -1,0 +1,313 @@
+body {
+  background-color: black;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+
+/*#firstImage {
+    position: fixed;
+}*/
+
+#secImage {
+  position: relative;
+  left: 200px;
+  margin-top: 50px;
+}
+
+/*------------------------------navbar------------------------------*/
+.header_area {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -400px;
+  z-index: 99;
+  transition: background 0.4s, all 0.3s linear;
+}
+
+.header_area .navbar {
+  background: black;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.header_area .navbar .logo_h {
+  color: black;
+  height: 80px;
+  /*  text-align: center;*/
+  line-height: 69px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header_area .navbar .navbar-brand {
+  padding-top: 0;
+}
+
+.header_area .navbar .nav .nav-item {
+  margin-right: 45px;
+}
+
+.header_area .navbar .nav .nav-item .nav-link {
+  font: 500 12px/80px "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #202e31;
+  padding: 0px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.header_area .navbar .nav .nav-item .nav-link:after {
+  display: none;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link,
+.header_area .navbar .nav .nav-item.active .nav-link {
+  color: yellow;
+}
+
+.header_area .navbar .nav .nav-item.submenu {
+  position: relative;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul {
+  border: none;
+  padding: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  margin: 0px;
+  background: #fff;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+  .header_area .navbar .nav .nav-item.submenu ul {
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    min-width: 200px;
+    text-align: left;
+    opacity: 0;
+    transition: all 300ms ease-in;
+    visibility: hidden;
+    display: block;
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+  }
+}
+
+.header_area .navbar .nav .nav-item.submenu ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #eeeeee transparent transparent transparent;
+  position: absolute;
+  right: 24px;
+  top: 45px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item {
+  display: block;
+  float: none;
+  margin-right: 0px;
+  border-bottom: 1px solid #ededed;
+  margin-left: 0px;
+  transition: all 0.4s linear;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
+  line-height: 45px;
+  color: #202e31;
+  padding: 0px 30px;
+  transition: all 150ms linear;
+  display: block;
+  margin-right: 0px;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
+  border-bottom: none;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
+  background: black;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .header_area .navbar .nav .nav-item.submenu:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
+}
+
+.header_area .navbar .nav .nav-item.submenu:hover ul .nav-item {
+  margin-top: 0px;
+}
+
+.header_area .navbar .nav .nav-item:last-child {
+  margin-right: 0px;
+}
+
+.header_area+section,
+.header_area+row,
+.header_area+div {
+  margin-top: 80px;
+}
+
+.header_area.navbar_fixed .main_menu {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  transform: translateY(70px);
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
+  line-height: 10px;
+}
+
+
+#search_input_box {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1140px;
+  z-index: 999;
+  text-align: center;
+  padding: 0 20px;
+  background: #e22104;
+}
+
+#search_input_box ::placeholder {
+  color: #fff;
+}
+
+#search_input_box .form-control {
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+}
+
+#search_input_box .btn {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+
+#search_input_box .ti-close {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-inner {
+  padding: 5px 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.navbar_fixed #search_input_box {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1140px;
+  z-index: 999;
+  text-align: center;
+  padding: 0 20px;
+  top: 80px;
+}
+/*-----------------------------------------NavBar-------------------------------------------*/
+
+/*-----------------------------------------Overlay----------------------------------------*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .rocketWords {
+    position: absolute;
+    top: 130px;
+    left: 860px;
+    font-family: algerian;
+    color: yellow;
+    font-size: 80px;
+    animation: rocket 5s 2;
+    animation-direction: alternate;
+  }
+  @keyframes rocket {
+    0%   {left: 860px; top: 130px;}
+    25%  {left: 860px; top: 110px;}
+    75%  {left: 860px; top: 150px;}
+    100% {left: 860px; top: 130px;}
+  }
+  
+  .projectWords {
+    position: absolute;
+    bottom: 50px;
+    left: 720px;
+    font-family: algerian;
+    color: yellow;
+    font-size: 80px;
+    animation: project 5s 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes project {
+    0%   {left: 720px; bottom: 50px;}
+    25%  {left: 680px; bottom: 50px;}
+    75%  {left: 800px; bottom: 50px;}
+    100% {left: 720px; bottom: 50px;}
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/*-----------------------------------------Overlay----------------------------------------*/
