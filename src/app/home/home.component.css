@@ -272,7 +272,7 @@ h6 {
   .rocketWords {
     position: absolute;
     top: 130px;
-    left: 880px;
+    left: 860px;
     font-family: algerian;
     color: yellow;
     font-size: 80px;
@@ -280,10 +280,10 @@ h6 {
     animation-direction: alternate;
   }
   @keyframes rocket {
-    0%   {left: 880px; top: 130px;}
-    25%  {left: 880px; top: 110px;}
-    75%  {left: 880px; top: 150px;}
-    100% {left: 880px; top: 130px;}
+    0%   {left: 860px; top: 130px;}
+    25%  {left: 860px; top: 110px;}
+    75%  {left: 860px; top: 150px;}
+    100% {left: 860px; top: 130px;}
   }
   
   .projectWords {
